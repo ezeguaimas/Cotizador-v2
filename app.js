@@ -5,10 +5,10 @@ function calcular() {
   const aporte4 = parseFloat(document.getElementById("aporte4").value) || 0;
   let adultos = document.getElementById("adultos").value.trim();
   let menores = document.getElementById("menores").value.trim();
-  const corpAdulto = 2760;
-  const corpMenor = 2760;
-  const vipAdulto = 5200;
-  const vipMenor = 3900;
+  const corpAdulto = 3310; //2760;
+  const corpMenor = 3310; //2760;
+  const vipAdulto = 6240; //5200;
+  const vipMenor = 4680; //3900;
 
   let sueldoBruto = (aporte1 + aporte2 + aporte3 + aporte4) / 0.03;
   // let sueldoBruto1 = (aporte1 + aporte2) / 0.03;
