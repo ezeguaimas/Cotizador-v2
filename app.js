@@ -90,7 +90,18 @@ function calcular() {
     typeof renderCorp === "number" ? renderCorp.toFixed(2) : renderCorp;
   document.getElementById("dif_vip").textContent =
     typeof renderVip === "number" ? renderVip.toFixed(2) : renderVip;
+
+  mostrarResultados();
 }
+
+function mostrarResultados() {
+  document.getElementById("resultados").style.display = "block";
+}
+
+function ocultarResultados() {
+  document.getElementById("resultados").style.display = "none";
+}
+
 
 const borrarBtn = document.getElementById("borrar");
 borrarBtn.addEventListener("click", function () {
@@ -106,4 +117,5 @@ borrarBtn.addEventListener("click", function () {
   document.getElementById("dif_corp").textContent = "";
   document.getElementById("dif_vip").textContent = "";
   calcular();
+  ocultarResultados();
 });
