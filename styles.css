@@ -132,7 +132,6 @@ footer {
   height: 40px; */
   border-radius: 10%;
   background-color: transparent;
-  border: 3px black;
   cursor: pointer;
   transition: background-color 0.3s;
 }
